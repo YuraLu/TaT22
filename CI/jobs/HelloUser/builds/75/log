@@ -1,0 +1,28 @@
+Started by timer
+Building on master in workspace C:\Jenkins\workspace\HelloUser
+No credentials specified
+ > C:\Git\cmd\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Git\cmd\git.exe config remote.origin.url https://github.com/YuraLu/helloci.git # timeout=10
+Fetching upstream changes from https://github.com/YuraLu/helloci.git
+ > C:\Git\cmd\git.exe --version # timeout=10
+ > C:\Git\cmd\git.exe fetch --tags --force --progress https://github.com/YuraLu/helloci.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision debc07d2a732e2425cefce932b2cc712131dc624 (refs/remotes/origin/master)
+ > C:\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Git\cmd\git.exe checkout -f debc07d2a732e2425cefce932b2cc712131dc624 # timeout=10
+Commit message: "Delete test.txt"
+ > C:\Git\cmd\git.exe rev-list --no-walk debc07d2a732e2425cefce932b2cc712131dc624 # timeout=10
+[HelloUser] $ cmd.exe /C "c:\apache-maven-3.6.0\bin\mvn.cmd -f java/pom.xml cobertura:cobertura && exit %%ERRORLEVEL%%"
+The JAVA_HOME environment variable is not defined correctly 
+This environment variable is needed to run this program 
+NB: JAVA_HOME should point to a JDK not a JRE 
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Cobertura] Publishing Cobertura coverage report...
+
+[Cobertura] Publishing Cobertura coverage results...
+
+[Cobertura] Cobertura coverage report found.
+
+Finished: FAILURE
