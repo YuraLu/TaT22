@@ -59,8 +59,8 @@ public class HardCoreTest {
     public void after() {
         driver.manage().deleteAllCookies();
         driver.quit();
-//        minuteMailDriver.manage().deleteAllCookies();
-//        minuteMailDriver.quit();
+        minuteMailDriver.manage().deleteAllCookies();
+        minuteMailDriver.quit();
     }
 
     @Test
